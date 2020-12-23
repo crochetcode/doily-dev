@@ -4,6 +4,16 @@
 
 img {
   height: 50vh;
+  object-fit: cover;
+}
+
+.circle {
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 25px white;
+  height: 48vh;
+  display: flex;
+  align-items: center;
 }
 
 .flex {
@@ -11,4 +21,16 @@ img {
   align-items: center;
   height: 100vh;
   justify-content: center;
+}
+
+.bracket {
+  font-size: 60vh;
+  margin-bottom: 10vh;
+  font-family: arial;
+}
+
+body {
+  background: black;
+  color: white;
+  color: magenta;
 }

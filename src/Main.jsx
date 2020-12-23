@@ -4,7 +4,11 @@ import thread from './assets/thread.svg';
 export const Main = () => {
     return (
         <div className='flex'>
-            <img src={thread} alt='ball of thread'/>
+            <div className="bracket">{'{'}</div>
+            <div className="circle">
+                <img src={thread} alt='ball of thread' />
+            </div>
+            <div className="bracket">{'}'}</div>
         </div>
     )
 }
