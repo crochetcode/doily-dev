@@ -14,6 +14,7 @@ img {
   height: 48vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .flex {
@@ -33,4 +34,11 @@ body {
   background: black;
   color: white;
   color: magenta;
+}
+
+.hook {
+  position: absolute;
+  height: 95vh;
+  z-index: -1;
+  transform: rotate(30deg) scaleX(-1);
 }
