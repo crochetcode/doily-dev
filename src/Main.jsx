@@ -4,10 +4,10 @@ import hook from './assets/hook.svg';
 
 export const Main = () => {
     return (
-        <div className='flex'>
+        <div className='flex page'>
             <div className="bracket">{'{'}</div>
             <div className="circle">
-                <img src={thread} alt='ball of thread' />
+                <img src={thread} alt='ball of thread' className='thread'/>
                 <img src={hook} alt='crochet hook' className='hook'/>
             </div>
             <div className="bracket">{'}'}</div>
