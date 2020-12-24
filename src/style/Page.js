@@ -7,17 +7,34 @@ background: black;
 display: flex;
 align-items: center;
 justify-content: center;
+@media (max-width: 500px){
+  margin-top: -50px;
+  padding-bottom: 50px;
+}
 
 .bracket {
   font-size: 60vh;
   margin-bottom: 10vh;
   font-family: arial;
+  @media (max-width: 1500px){
+    font-size: 40vh;
+  }
+  @media (max-width: 1200px){
+    font-size: 25vh;
+    margin-bottom: 5vh;
+  }
 }
 
 .hook {
   position: absolute;
   height: 95vh;
   transform: rotate(30deg) scaleX(-1);
+  @media (max-width: 1500px){
+    height: 70vh;
+  }
+  @media (max-width: 1200px){
+    height: 45vh;
+  }
 }
 
 .thread {
@@ -27,7 +44,21 @@ justify-content: center;
   height: 50vh;
   &:hover {
     height: 51vh;
-  margin: -1.5vh;
+    margin: -1.5vh;
+  @media (max-width: 1500px){
+    height: 36vh;
+    margin: -1vh;
+  }
+  @media (max-width: 1200px){
+    height: 26vh;
+    margin: -1vh;
+  }
+  }
+  @media (max-width: 1500px){
+    height: 36vh;
+  }
+  @media (max-width: 1200px){
+    height: 26vh;
   }
 }
 
@@ -42,6 +73,14 @@ justify-content: center;
   justify-content: center;
   z-index: 10;
   position: absolute;
+  @media (max-width: 1500px){
+    height: 35vh;
+    width: 35vh;
+  }
+  @media (max-width: 1200px){
+    height: 25vh;
+    width: 25vh;
+  }
 }
 
 @keyframes spin {
