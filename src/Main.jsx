@@ -21,15 +21,22 @@ export const Main = () => {
                 <Hook mode={mode}/>
                 <div className='bracket'>{'}'}</div>
                 <nav>
-                    {mode === 'dark' && <i className='fas fa-sun logo' onClick={() => onClick()} />}
-                    {mode === 'light' && <i class="fas fa-moon logo" onClick={() => onClick()} />}
                     <a className='logo'
                         href='https://www.twitch.tv/crochetcode'
                         target='_blank'
                         rel="noopener noreferrer"
-                    >
+                        >
                         <i className='fab fa-twitch' />
                     </a>
+                    <a className='logo'
+                        href='https://github.com/crochetcode/doily-dev-page'
+                        target='_blank'
+                        rel="noopener noreferrer"
+                        >
+                        <i className='fab fa-github' />
+                    </a>
+                        {mode === 'dark' && <i className='fas fa-sun logo' onClick={() => onClick()} />}
+                        {mode === 'light' && <i class="fas fa-moon logo" onClick={() => onClick()} />}
                 </nav>
             </Page>
         </ThemeProvider>

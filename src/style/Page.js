@@ -40,7 +40,6 @@ justify-content: center;
 
 .thread {
   animation: spin 20s ease 20s infinite alternate;
-  /* margin: -1vh; */
   z-index: 10;
   height: 50vh;
   position: absolute;
@@ -48,11 +47,9 @@ justify-content: center;
     height: 51vh;
   @media (max-width: 1500px){
     height: 36vh;
-    /* margin: -1vh; */
   }
   @media (max-width: 1200px){
     height: 26vh;
-    /* margin: -1vh; */
   }
   }
   @media (max-width: 1500px){
