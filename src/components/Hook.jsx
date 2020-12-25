@@ -3,14 +3,20 @@ import styled from 'styled-components';
 
 export const Hook = () => {
     const StyledHook = styled.svg`
-      position: absolute;
       height: 95vh;
       transform: rotate(30deg) scaleX(-1);
+      margin: 0 -235px;
       @media (max-width: 1500px){
       height: 70vh;
+      margin: 0 -175px;
       }
       @media (max-width: 1200px){
       height: 45vh;
+      margin: -125px;
+    }
+
+    .crop {
+        overflow: hidden;
     }
 
     #path833 {

@@ -13,6 +13,7 @@ export const light = {
 }
 
 export const Page = styled.div`
+overflow: hidden;
 height: 100vh;
 color: ${props => props.theme.color};
 background: ${props => props.theme.background};
@@ -37,33 +38,21 @@ justify-content: center;
   }
 }
 
-/* .hook {
-  position: absolute;
-  height: 95vh;
-  transform: rotate(30deg) scaleX(-1);
-  @media (max-width: 1500px){
-    height: 70vh;
-  }
-  @media (max-width: 1200px){
-    height: 45vh;
-  }
-} */
-
 .thread {
   animation: spin 20s ease 20s infinite alternate;
-  margin: -1vh;
+  /* margin: -1vh; */
   z-index: 10;
   height: 50vh;
+  position: absolute;
   &:hover {
     height: 51vh;
-    margin: -1.5vh;
   @media (max-width: 1500px){
     height: 36vh;
-    margin: -1vh;
+    /* margin: -1vh; */
   }
   @media (max-width: 1200px){
     height: 26vh;
-    margin: -1vh;
+    /* margin: -1vh; */
   }
   }
   @media (max-width: 1500px){
