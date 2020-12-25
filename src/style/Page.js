@@ -60,6 +60,10 @@ justify-content: center;
   @media (max-width: 1200px){
     height: 26vh;
   }
+  @media (max-width: 1200px){
+    height: 21vh;
+    width: 21vh;
+  }
 }
 
 .circle {
@@ -81,6 +85,10 @@ justify-content: center;
     height: 25vh;
     width: 25vh;
   }
+  @media (max-width: 1200px){
+    height: 20vh;
+    width: 20vh;
+  }
 }
 
 @keyframes spin {
@@ -89,6 +97,32 @@ justify-content: center;
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+.twitch {
+  display: flex;
+  align-items: center;
+  color: magenta;
+  font-size: 1rem;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+    color: white;
+  }
+  @media (max-width: 900px){
+    top: 25px;
+    right: 25px;
+  }
+}
+
+.fa-twitch {
+  font-size: 2.25rem;
+  @media (max-width: 900px){
+    font-size: 1.5rem;
   }
 }
 `
