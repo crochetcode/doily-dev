@@ -1,9 +1,22 @@
 import styled from 'styled-components';
 
+export const dark = {
+  color: 'magenta',
+  background: 'black',
+  shadow: 'white'
+}
+
+export const light = {
+    color: 'purple',
+    background: 'white',
+    shadow: 'black'
+}
+
 export const Page = styled.div`
+overflow: hidden;
 height: 100vh;
-color: magenta;
-background: black;
+color: ${props => props.theme.color};
+background: ${props => props.theme.background};
 display: flex;
 align-items: center;
 justify-content: center;
@@ -25,33 +38,21 @@ justify-content: center;
   }
 }
 
-.hook {
-  position: absolute;
-  height: 95vh;
-  transform: rotate(30deg) scaleX(-1);
-  @media (max-width: 1500px){
-    height: 70vh;
-  }
-  @media (max-width: 1200px){
-    height: 45vh;
-  }
-}
-
 .thread {
   animation: spin 20s ease 20s infinite alternate;
-  margin: -1vh;
+  /* margin: -1vh; */
   z-index: 10;
   height: 50vh;
+  position: absolute;
   &:hover {
     height: 51vh;
-    margin: -1.5vh;
   @media (max-width: 1500px){
     height: 36vh;
-    margin: -1vh;
+    /* margin: -1vh; */
   }
   @media (max-width: 1200px){
     height: 26vh;
-    margin: -1vh;
+    /* margin: -1vh; */
   }
   }
   @media (max-width: 1500px){
@@ -71,7 +72,7 @@ justify-content: center;
   width: 48vh;
   background: white;
   border-radius: 50%;
-  box-shadow: 0 0 25px white;
+  box-shadow: 0 0 25px ${props => props.theme.shadow};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,27 +101,26 @@ justify-content: center;
   }
 }
 
-.twitch {
+nav {
   display: flex;
   align-items: center;
-  color: magenta;
-  font-size: 1rem;
   position: fixed;
   top: 25px;
   right: 25px;
-  text-decoration: none;
-  &:hover {
-    cursor: pointer;
-    color: white;
-  }
   @media (max-width: 900px){
     top: 25px;
     right: 25px;
   }
 }
 
-.fa-twitch {
+.logo {
+  color: ${props => props.theme.color};
   font-size: 2.25rem;
+  margin-left: 10px;
+  &:hover {
+    cursor: pointer;
+    color: ${props => props.theme.shadow};
+  }
   @media (max-width: 900px){
     font-size: 1.5rem;
   }
