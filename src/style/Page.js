@@ -9,7 +9,7 @@ export const dark = {
 export const light = {
     color: 'purple',
     background: 'white',
-    shadow: 'gray'
+    shadow: 'black'
 }
 
 export const Page = styled.div`
@@ -37,7 +37,7 @@ justify-content: center;
   }
 }
 
-.hook {
+/* .hook {
   position: absolute;
   height: 95vh;
   transform: rotate(30deg) scaleX(-1);
@@ -47,7 +47,7 @@ justify-content: center;
   @media (max-width: 1200px){
     height: 45vh;
   }
-}
+} */
 
 .thread {
   animation: spin 20s ease 20s infinite alternate;
