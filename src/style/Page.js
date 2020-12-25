@@ -1,9 +1,21 @@
 import styled from 'styled-components';
 
+export const dark = {
+  color: 'magenta',
+  background: 'black',
+  shadow: 'white'
+}
+
+export const light = {
+    color: 'purple',
+    background: 'white',
+    shadow: 'gray'
+}
+
 export const Page = styled.div`
 height: 100vh;
-color: magenta;
-background: black;
+color: ${props => props.theme.color};
+background: ${props => props.theme.background};
 display: flex;
 align-items: center;
 justify-content: center;
@@ -71,7 +83,7 @@ justify-content: center;
   width: 48vh;
   background: white;
   border-radius: 50%;
-  box-shadow: 0 0 25px white;
+  box-shadow: 0 0 25px ${props => props.theme.shadow};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,27 +112,26 @@ justify-content: center;
   }
 }
 
-.twitch {
+nav {
   display: flex;
   align-items: center;
-  color: magenta;
-  font-size: 1rem;
   position: fixed;
   top: 25px;
   right: 25px;
-  text-decoration: none;
-  &:hover {
-    cursor: pointer;
-    color: white;
-  }
   @media (max-width: 900px){
     top: 25px;
     right: 25px;
   }
 }
 
-.fa-twitch {
+.logo {
+  color: ${props => props.theme.color};
   font-size: 2.25rem;
+  margin-left: 10px;
+  &:hover {
+    cursor: pointer;
+    color: ${props => props.theme.shadow};
+  }
   @media (max-width: 900px){
     font-size: 1.5rem;
   }
