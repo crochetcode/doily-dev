@@ -80,10 +80,6 @@ justify-content: center;
     width: 35vh;
   }
   @media (max-width: 1200px){
-    height: 25vh;
-    width: 25vh;
-  }
-  @media (max-width: 1200px){
     height: 20vh;
     width: 20vh;
   }

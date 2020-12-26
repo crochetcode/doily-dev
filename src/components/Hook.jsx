@@ -5,14 +5,14 @@ export const Hook = () => {
     const StyledHook = styled.svg`
       height: 95vh;
       transform: rotate(30deg) scaleX(-1);
-      margin: 0 -235px;
+      margin: 0 -27vh;
       @media (max-width: 1500px){
       height: 70vh;
-      margin: 0 -175px;
+      margin: 0 -20vh;
       }
       @media (max-width: 1200px){
       height: 45vh;
-      margin: -125px;
+      margin: -14vh;   
     }
 
     .crop {
